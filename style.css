@@ -7,7 +7,7 @@ h1{
 }
 
 img{
-  max-width: 25%;
+  max-width: 50%;
 }
 
 a{
@@ -16,7 +16,7 @@ a{
 }
 
 .title{
-  max-width: 400px;
+  max-width: 50%;
   margin-bottom: 100px;
   margin-left: 0px;
 }
@@ -34,6 +34,7 @@ a{
   position: absolute;
   top: 50px;
   right: 26%;
+  padding: 20px;
   text-decoration: none;
 }
 
