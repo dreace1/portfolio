@@ -28,12 +28,12 @@ a{
   flex-wrap: wrap;
   margin: auto;
   justify-content: space-between;
-  width: 500px;
+  width: 25%;
   height: 50px;
   gap: 30px 30px;
   position: absolute;
   top: 50px;
-  right: 500px;
+  right: 26%;
   text-decoration: none;
 }
 
@@ -44,4 +44,9 @@ a{
   position: absolute;
   right: 50px;
   width: 50%;
+}
+
+.bottom_bar{
+  position: absolute;
+  bottom: 0px;
 }
