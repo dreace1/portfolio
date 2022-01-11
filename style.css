@@ -1,8 +1,16 @@
 h1{
   font-family: "Nunito Sans";
-  font-size: 100px;
+  font-size: 50px;
 }
 
 img{
-  width: 50%
+  max-width: 500px;
+}
+
+.title{
+}
+
+
+.img_grid{
+  display: flex;
 }
