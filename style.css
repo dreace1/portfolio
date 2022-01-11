@@ -21,6 +21,12 @@ a{
   margin-left: 0px;
 }
 
+.max_grid{
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+
 .projects_grid{
   font-size: 30px;
   display: flex;
