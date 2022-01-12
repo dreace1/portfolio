@@ -1,5 +1,6 @@
 body{
   font-family: "Nunito Sans";
+  height: 100%;
 }
 
 h1{
@@ -7,7 +8,7 @@ h1{
 }
 
 img{
-  max-width: 60%;
+  max-width: 45%;
 }
 
 a{
@@ -16,35 +17,104 @@ a{
 }
 
 .title{
-  max-width: 50%;
+  max-width: 20%;
+  min-width: 15%;
   padding-bottom: 100px;
   margin-left: 0px;
 }
 
 
-.projects_grid{
-  font-size: 30px;
+.img_grid, .projects_grid, .title, .recent, .content_grid{
+  border: 1px solid blue;
+}
+
+
+
+.content_grid{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: auto;
-  justify-content: space-between;
-  width: 25%;
-  height: 15%;
-  gap: 30px 30px;
+  flex-direction: column;
+  /*max-width: 35%;*/
+  grid-gap: 10px;
   position: absolute;
-  top: 50px;
-  right: 26%;
+  top: 5%;
+  border: 1px solid red;
+}
+
+
+.content_grid > .projects_grid{
+  align-self: center;
+  margin-left: 30%;
+}
+
+
+.projects_grid{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 40%;
   text-decoration: none;
   font-size: 3vh;
 }
 
+
+.top_row, .bottom_row{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: space-between;
+
+}
+
+.top_row > a, .bottom_row > a{
+  margin: 10px;
+}
+
+
+
 .img_grid{
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  position: absolute;
-  right: 50px;
-  width: 50%;
-  padding-bottom: 2.5rem;
+  border: 1px solid green;
+  align-items: flex-end;
+  margin-right: 16%;
+  row-gap: 10px;
+
+
+
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  background-color: #efefef;
+  text-align: center;
+}
+
+/*
+footer{
+  position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: red;
+color: white;
+text-align: center;
+}
+*/
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  .body {
+    width: 20%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  h1{
+    font-size: 2.2vh;
+  }
 }

@@ -1,0 +1,38 @@
+body{
+  font-family: "Nunito Sans";
+}
+
+.flex_box{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1{
+  font-size: 5.5vh;
+}
+
+img{
+  max-width: 60%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 4vh;
+}
+
+.projects_grid, .title, .img_grid {
+  border: 1px solid blue;
+
+}
+
+.title{
+
+}
+
+.projects_grid{
+  flex-direction: column;
+  flex-basis: 20%;
+}
