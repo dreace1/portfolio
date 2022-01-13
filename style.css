@@ -1,5 +1,5 @@
 body{
-  font-family: "Nunito Sans";
+  font-family: "Jost";
   height: 100%;
 }
 
@@ -98,6 +98,24 @@ a:hover::before {
   max-width: 45%;
 }
 
+.about_grid{
+  display: flex;
+  flex-direction: row;
+  min-height: 45vh;
+  margin-right: 17%;
+  margin-left: 45%;
+  column-gap: 10%;
+  margin-top: 10%;
+  font-size: 1.9vh;
+}
+
+.about_grid > img{
+  max-width: 50%;
+  align-self: flex-start;
+}
+
+
+
 
 .footer {
   display: flex;
@@ -105,11 +123,18 @@ a:hover::before {
   justify-content: space-between;
   margin-left: 2%;
   margin-right: 2%;
+  font-size: 3vh;
 }
+
+
+
+
+
+
 
 @media screen and (max-width: 800px) {
   .body {
-    width: 20%; /* The width is 100%, when the viewport is 800px or smaller */
+    width: 20%;
   }
 
   h1{
@@ -120,6 +145,10 @@ a:hover::before {
     font-size: 1.5vh;
     text-decoration: none;
     color: black;
+  }
+
+  p{
+    font-size: 1.5vh;
   }
 
   .top_row > a, .bottom_row > a{
@@ -138,6 +167,6 @@ a:hover::before {
     min-width: 15%;
     padding-bottom: 100px;
     margin-left: 0px;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 }
