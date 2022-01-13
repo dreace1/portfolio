@@ -34,23 +34,42 @@
       </div>
 
       <div class="img_grid">
-        <img src="img\potsdam\potsdam15.jpg" alt="potsdam15">
-        <img src="img\potsdam\rainy3.JPG" alt="rainy3">
-        <img src="img\potsdam\women2.jpg" alt="women2">
-        <img src="img\potsdam\potsdam5.jpg" alt="potsdam5">
+        <img class="zoom" src="img\potsdam\potsdam15.jpg" alt="potsdam15">
+        <img class="zoom" src="img\potsdam\rainy3.JPG" alt="rainy3">
+        <img class="zoom" src="img\potsdam\women2.jpg" alt="women2">
+        <img class="zoom" src="img\potsdam\potsdam5.jpg" alt="potsdam5">
       </div>
+
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+      </div>
+
+      <script>
+        var modal = document.getElementById('myModal');
+        var images = document.getElementsByClassName('zoom');
+        var modalImg = document.getElementById("img01");
+        for (var i = 0; i < images.length; i++) {
+          var img = images[i];
+          img.onclick = function(evt) {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+          }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+      </script>
+
       <div class="footer">
         <p>&copy Hannes Rosenkranz</p>
-        <p><a href="https://www.instagram.com/dreace27/" class="test">Instagram</a></p>
-        <p><a href="mailto:hannesro27@gmail.com" class = "test">hannesro27@gmail.com</a></p>
+        <p><a href="https://www.instagram.com/dreace27/">Instagram</a></p>
+        <p><a href="mailto:hannesro27@gmail.com">hannesro27@gmail.com</a></p>
       </div>
 
-
     </div>
-
-
-
-
-
   </body>
 </html>

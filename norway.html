@@ -34,13 +34,37 @@
       </div>
 
       <div class="img_grid">
-        <img src="img\norway\luxemburg1.jpg" alt="luxemburg1">
-        <img src="img\norway\norway5.jpg" alt="norway5">
-        <img src="img\norway\norway4.jpg" alt="norway4">
-        <img src="img\norway\norway3.jpg" alt="norway3">
-        <img src="img\norway\norway2.jpg" alt="norway2">
-        <img src="img\norway\norway1.jpg" alt="norway1">
+        <img class = "zoom" src="img\norway\luxemburg1.jpg" alt="luxemburg1">
+        <img class = "zoom" src="img\norway\norway5.jpg" alt="norway5">
+        <img class = "zoom" src="img\norway\norway4.jpg" alt="norway4">
+        <img class = "zoom" src="img\norway\norway3.jpg" alt="norway3">
+        <img class = "zoom" src="img\norway\norway2.jpg" alt="norway2">
+        <img class = "zoom" src="img\norway\norway1.jpg" alt="norway1">
       </div>
+
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+      </div>
+
+      <script>
+        var modal = document.getElementById('myModal');
+        var images = document.getElementsByClassName('zoom');
+        var modalImg = document.getElementById("img01");
+        for (var i = 0; i < images.length; i++) {
+          var img = images[i];
+          img.onclick = function(evt) {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+          }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+      </script>
 
       <div class="footer">
         <p>&copy Hannes Rosenkranz</p>

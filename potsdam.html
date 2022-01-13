@@ -34,32 +34,56 @@
       </div>
 
       <div class="img_grid">
-        <img src="img\potsdam\rainy3.JPG" alt="rainy3">
-        <img src="img\potsdam\rainy2.jpg" alt="rainy2">
-        <img src="img\potsdam\rainy1.jpg" alt="rainy1">
-        <img src="img\potsdam\potsdam20.JPG" alt="potsdam20">
-        <img src="img\potsdam\potsdam19.jpg" alt="potsdam19">
-        <img src="img\potsdam\potsdam18.JPG" alt="potsdam18">
-        <img src="img\potsdam\potsdam17.jpg" alt="potsdam17">
-        <img src="img\potsdam\potsdam16.jpg" alt="potsdam16">
-        <img src="img\potsdam\women1.jpg" alt="women1">
-        <img src="img\potsdam\women2.jpg" alt="women2">
-        <img src="img\potsdam\potsdam15.jpg" alt="potsdam15">
-        <img src="img\potsdam\potsdam14.jpg" alt="potsdam14">
-        <img src="img\potsdam\potsdam13.jpg" alt="potsdam13">
-        <img src="img\potsdam\potsdam12.jpg" alt="potsdam12">
-        <img src="img\potsdam\potsdam11.jpg" alt="potsdam11">
-        <img src="img\potsdam\potsdam10.jpg" alt="potsdam10">
-        <img src="img\potsdam\potsdam9.jpg" alt="potsdam9">
-        <img src="img\potsdam\potsdam8.jpg" alt="potsdam8">
-        <img src="img\potsdam\potsdam7.jpg" alt="potsdam7">
-        <img src="img\potsdam\potsdam6.jpg" alt="potsdam6">
-        <img src="img\potsdam\potsdam5.jpg" alt="potsdam5">
-        <img src="img\potsdam\potsdam4.jpg" alt="potsdam4">
-        <img src="img\potsdam\potsdam3.jpg" alt="potsdam3">
-        <img src="img\potsdam\potsdam2.JPG" alt="potsdam2">
-        <img src="img\potsdam\potsdam1.JPG" alt="potsdam1">
+        <img class = "zoom" src="img\potsdam\rainy3.JPG" alt="rainy3">
+        <img class = "zoom" src="img\potsdam\rainy2.jpg" alt="rainy2">
+        <img class = "zoom" src="img\potsdam\rainy1.jpg" alt="rainy1">
+        <img class = "zoom" src="img\potsdam\potsdam20.JPG" alt="potsdam20">
+        <img class = "zoom" src="img\potsdam\potsdam19.jpg" alt="potsdam19">
+        <img class = "zoom" src="img\potsdam\potsdam18.JPG" alt="potsdam18">
+        <img class = "zoom" src="img\potsdam\potsdam17.jpg" alt="potsdam17">
+        <img class = "zoom" src="img\potsdam\potsdam16.jpg" alt="potsdam16">
+        <img class = "zoom" src="img\potsdam\women1.jpg" alt="women1">
+        <img class = "zoom" src="img\potsdam\women2.jpg" alt="women2">
+        <img class = "zoom" src="img\potsdam\potsdam15.jpg" alt="potsdam15">
+        <img class = "zoom" src="img\potsdam\potsdam14.jpg" alt="potsdam14">
+        <img class = "zoom" src="img\potsdam\potsdam13.jpg" alt="potsdam13">
+        <img class = "zoom" src="img\potsdam\potsdam12.jpg" alt="potsdam12">
+        <img class = "zoom" src="img\potsdam\potsdam11.jpg" alt="potsdam11">
+        <img class = "zoom" src="img\potsdam\potsdam10.jpg" alt="potsdam10">
+        <img class = "zoom" src="img\potsdam\potsdam9.jpg" alt="potsdam9">
+        <img class = "zoom" src="img\potsdam\potsdam8.jpg" alt="potsdam8">
+        <img class = "zoom" src="img\potsdam\potsdam7.jpg" alt="potsdam7">
+        <img class = "zoom" src="img\potsdam\potsdam6.jpg" alt="potsdam6">
+        <img class = "zoom" src="img\potsdam\potsdam5.jpg" alt="potsdam5">
+        <img class = "zoom" src="img\potsdam\potsdam4.jpg" alt="potsdam4">
+        <img class = "zoom" src="img\potsdam\potsdam3.jpg" alt="potsdam3">
+        <img class = "zoom" src="img\potsdam\potsdam2.JPG" alt="potsdam2">
+        <img class = "zoom" src="img\potsdam\potsdam1.JPG" alt="potsdam1">
       </div>
+
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+      </div>
+
+      <script>
+        var modal = document.getElementById('myModal');
+        var images = document.getElementsByClassName('zoom');
+        var modalImg = document.getElementById("img01");
+        for (var i = 0; i < images.length; i++) {
+          var img = images[i];
+          img.onclick = function(evt) {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+          }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+      </script>
 
       <div class="footer">
         <p>&copy Hannes Rosenkranz</p>
