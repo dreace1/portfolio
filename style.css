@@ -97,7 +97,7 @@ a:hover::before {
 
 .img_grid > img{
   max-width: 45%;
-  cursor: pointer;
+  cursor: zoom-in;
   transition: 0.3s;
 }
 
