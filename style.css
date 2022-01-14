@@ -82,8 +82,16 @@ a:hover::before {
 
 }
 
+
 .top_row > a, .bottom_row > a{
   margin: 10px;
+}
+
+.current{
+  background-image: linear-gradient(#feaeaf, #feaeaf);
+  background-size: 100% 0.1em;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
 }
 
 .img_grid{
@@ -115,6 +123,14 @@ a:hover::before {
 .about_grid > img{
   max-width: 50%;
   align-self: flex-start;
+}
+
+
+#about a{
+  background-image: linear-gradient(#feaeaf, #feaeaf);
+  background-size: 100% 0.1em;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
 }
 
 .footer {
