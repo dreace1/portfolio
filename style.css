@@ -88,11 +88,13 @@ a:hover::before {
 }
 
 .current{
+  border: 1px solid red;
   background-image: linear-gradient(#feaeaf, #feaeaf);
   background-size: 100% 0.1em;
   background-position-y: 100%;
   background-repeat: no-repeat;
 }
+
 
 .img_grid{
   display: flex;
