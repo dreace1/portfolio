@@ -69,7 +69,6 @@ a:hover::before {
   flex-direction: column;
   row-gap: 30px;
   width: 40%;
-  text-decoration: none;
   font-size: 3vh;
 }
 
@@ -85,6 +84,7 @@ a:hover::before {
 
 .top_row > a, .bottom_row > a{
   margin: 10px;
+  
 }
 
 .current{
@@ -92,6 +92,7 @@ a:hover::before {
   background-size: 100% 0.1em;
   background-position-y: 100%;
   background-repeat: no-repeat;
+  /*border: 1px solid purple;*/
 }
 
 
